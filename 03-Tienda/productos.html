@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Todos los Productos</title>
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo RedStore" width="125px">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="productos.html"> Producto </a></li>
+            <li><a href=""> Nosotros </a></li>
+            <li><a href=""> Contacto </a></li>
+            <li><a href=""> Cuenta </a></li>
+          </ul>
+        </nav>
+        <img src="img/cart.png" alt="icon store" width="30px">
+        <img src="img/menu.png" alt="menu movil" class="menu-icon" onclick="menutoggle()" >
+    </div>
+  </div>
+
+  <!-- ------------------------- Productos futuros ----------------------------->
+  <div class="small-container">
+      <div class="row row-2">
+        <h2>Todos los Productos</h2>
+        <select>
+          <option>Predeterminados</option>
+          <option>Menor Precio</option>
+          <option>Mas Vendidos</option>
+          <option>Menor Costo</option>
+          <option>Menos Vendido</option>
+        </select>
+      </div>
+   
+      <div class="row">
+        <div class="col-4">
+          <img src="img/product-1.jpg" alt="producto stock">
+        <h4>Playera Roja</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        <p>$50.0</p>
+      </div>
+        <div class="col-4"><img src="img/product-2.jpg" alt="producto stock">
+        <h4>Tenis Panter</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        <p>$85.0</p>
+      </div>
+        <div class="col-4"><img src="img/product-3.jpg" alt="producto stock">
+        <h4>Pants Slim</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        <p>$120.0</p>
+      </div>
+        <div class="col-4"><img src="img/product-4.jpg" alt="producto stock">
+        <h4>Playera Azul</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+        <p>$50.0</p>
+      </div>
+      </div>
+    
+
+
+    <div class="row">
+      <div class="col-4">
+        <img src="img/product-5.jpg" alt="producto stock">
+      <h4>Tenis Bota</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$50.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-6.jpg" alt="producto stock">
+      <h4>Playera Panter</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$85.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-7.jpg" alt="producto stock">
+      <h4>Calcetines Slim</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$120.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-8.jpg" alt="producto stock">
+      <h4>Fossil Black</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      <p>$50.0</p>
+    </div>
+
+      <div class="col-4">
+        <img src="img/product-9.jpg" alt="producto stock">
+      <h4>Playera Roja</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$50.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-10.jpg" alt="producto stock">
+      <h4>Tenis Panter</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$85.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-11.jpg" alt="producto stock">
+      <h4>Pants Slim</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      <p>$120.0</p>
+    </div>
+      <div class="col-4"><img src="img/product-12.jpg" alt="producto stock">
+      <h4>Playera Azul</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      <p>$50.0</p>
+    </div>
+  </div>
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+  </div>
+
+   <!-- ------------------------------- brans --------------------------- -->
+   <div class="brans">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-5">
+            <img src="img/logo-godrej.png" alt="godrej">
+          </div> 
+          <div class="col-5">
+            <img src="img/logo-oppo.png" alt="godrej">
+          </div>
+          <div class="col-5">
+            <img src="img/logo-coca-cola.png" alt="godrej">
+          </div>
+          <div class="col-5">
+            <img src="img/logo-paypal.png" alt="godrej">
+          </div>
+          <div class="col-5">
+            <img src="img/logo-philips.png" alt="godrej">
+          </div>
+        </div>
+      </div>
+   </div>
+   <!-- ------------------------------- footer --------------------------- -->
+   <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="footer-col-1">
+          <h3>Descarga la App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="app-logo">
+            <img src="img/app-store.png" alt="Apple Store">
+            <img src="img/play-store.png" alt="Play Store">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="img/logo-white.png" alt="logo">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Links de Interes</h3>
+          <ul>
+            <li>Cupones</li>
+            <li>Blog</li>
+            <li>Devoluciones</li>
+            <li>Socios</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 202</p>
+    </div>
+   </div>
+
+   <!-- -------------------------js togle menu ----------------------------- -->
+   <script>
+     var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+    else 
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+   </script>
+
+</body>
+</html>
