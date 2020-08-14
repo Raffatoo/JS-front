@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Todos los Productos</title>
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo RedStore" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="productos.html"> Producto </a></li>
+            <li><a href=""> Nosotros </a></li>
+            <li><a href=""> Contacto </a></li>
+            <li><a href="cuenta.html"> Cuenta </a></li>
+          </ul>
+        </nav>
+        <a href="carrito_compra.html"><img src="img/cart.png" alt="icon store" width="30px"></a>
+        <img src="img/menu.png" alt="menu movil" class="menu-icon" onclick="menutoggle()" >
+    </div>
+  </div>
+
+  <!-- --------------- Pagina de Cuenta --------------->
+  <div class="acount-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="img/image1.png" width="100%" >
+        </div>
+
+        <div class="col-2">
+          <div class="form-container">
+
+            <div class="form-btn">
+              <span onclick="login()">Ingreso</span>
+              <span onclick="registro()">Resgistro</span>
+              <hr id="Indicador">
+            </div>
+
+            <form id="LoginForm">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="Password">
+              <button type="submit" class="btn">Login</button>
+              <a href="">Recuperar Contraseña</a>
+            </form>
+
+            <form id="RegForm">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="Email">
+              <input type="password" placeholder="Password">
+              <button type="submit" class="btn">Registrar</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+   <!-- ------------------------------- footer --------------------------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="footer-col-1">
+          <h3>Descarga la App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="app-logo">
+            <img src="img/app-store.png" alt="Apple Store">
+            <img src="img/play-store.png" alt="Play Store">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="img/logo-white.png" alt="logo">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Links de Interes</h3>
+          <ul>
+            <li>Cupones</li>
+            <li>Blog</li>
+            <li>Devoluciones</li>
+            <li>Socios</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 202</p>
+    </div>
+  </div>
+
+   <!-- -------------------------js togle menu ----------------------------- -->
+   <script>
+     var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+    else 
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <!------------ JS togglw formulario ------------>
+  <script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicador = document.getElementById("Indicador");
+
+    function registro(){
+      RegForm.style.transform = "translateX(0px)";
+      LoginForm.style.transform = "translateX(0px)";
+      Indicador.style.transform = "translateX(100px)";
+    }
+    function login(){
+      RegForm.style.transform = "translateX(300px)";
+      LoginForm.style.transform = "translateX(300px)";
+      Indicador.style.transform = "translateX(0px)";
+    }
+
+
+  </script>
+
+</body>
+</html>

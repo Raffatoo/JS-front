@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Todos los Productos</title>
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo RedStore" width="125px"></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html"> Inicio </a></li>
+            <li><a href="productos.html"> Producto </a></li>
+            <li><a href=""> Nosotros </a></li>
+            <li><a href=""> Contacto </a></li>
+            <li><a href="cuenta.html"> Cuenta </a></li>
+          </ul>
+        </nav>
+        <a href="carrito_compra.html"><img src="img/cart.png" alt="icon store" width="30px"></a>
+        <img src="img/menu.png" alt="menu movil" class="menu-icon" onclick="menutoggle()" >
+    </div>
+  </div>
+
+  <!-- --------------- Detalles Carrito de compras --------------->
+
+  <div class="small-container cart-page">
+    <table>
+
+      <tr>
+        <th>Producto</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/buy-1.jpg">
+            <div>
+              <p>Playera Color Rojo</p>
+              <small>Price: $50.00</small>
+              <br>
+              <a href="">quitar</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$70.00</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/buy-2.jpg">
+            <div>
+              <p>Tenis Black and White</p>
+              <small>Price: $50.00</small>
+              <br>
+              <a href="">quitar</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="img/buy-3.jpg">
+            <div>
+              <p>Pants Black</p>
+              <small>Price: $50.00</small>
+              <br>
+              <a href="">quitar</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$80.00</td>
+      </tr>
+    </table>
+
+     <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$35.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$230.00</td>
+          </tr>
+        </table>
+      </div>
+   
+
+
+  </div>
+
+
+   <!-- ------------------------------- footer --------------------------- -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="footer-col-1">
+          <h3>Descarga la App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="app-logo">
+            <img src="img/app-store.png" alt="Apple Store">
+            <img src="img/play-store.png" alt="Play Store">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="img/logo-white.png" alt="logo">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Links de Interes</h3>
+          <ul>
+            <li>Cupones</li>
+            <li>Blog</li>
+            <li>Devoluciones</li>
+            <li>Socios</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 202</p>
+    </div>
+  </div>
+
+   <!-- -------------------------js togle menu ----------------------------- -->
+   <script>
+     var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+    else 
+      {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+</html>
